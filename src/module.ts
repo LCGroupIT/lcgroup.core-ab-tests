@@ -12,12 +12,12 @@ import {AbTestOptions} from './interfaces';
     exports: [AbTestVersionDirective, AbTestsPipe],
 })
 export class AbTestsModule {
-    static forRoot(configs: AbTestOptions[]): ModuleWithProviders<AbTestsModule> {
+    static forRoot(configs?: AbTestOptions[]): ModuleWithProviders<AbTestsModule> {
         return {
             ngModule: AbTestsModule,
             providers: [
                 AbTestsService,
-                {provide: CONFIG, useValue: configs},
+                {provide: CONFIG, useValue: configs || []},
                 CookieHandler,
                 CrawlerDetector,
                 RandomExtractor,
