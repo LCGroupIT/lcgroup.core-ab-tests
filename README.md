@@ -14,6 +14,7 @@ It will **make your tests easy to debug and understand**, regardless of how comp
 - [Full documentation part 2: Usage](#documentation-2-usage)
 - [Full documentation part 3: Tips](#documentation-3-tips)
 - [Server side rendering](#server-side-rendering)
+- [Usage with routes](#usage-with-routes)
 
 
 # Features
@@ -505,7 +506,7 @@ set(name: string, value: string, domain?: string, expires?: number): void
 
 Obviously, in your own implementation of `MyOwnCookieHandler`, you don't have to worry about where the parameters `name`, `domain`, etc come from: you just need to add them to the cookie, if they are present, with whatever cookie-writing interface you are using.
 
-### Usage with routes:
+# Usage with routes:
 
 ```typescript
 interface GuardData {
