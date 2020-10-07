@@ -63,7 +63,7 @@
         "lint": "npx eslint --config ./.eslintrc.js --debug \"src/**/*.{js,ts,html}\"",
         "lint:fix": "npx eslint --config ./.eslintrc.js --fix --debug \"src/**/*.{js,ts,html}\"",
         "version": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r && npm run build && npm run copy:assets",
-        "release": "npx np --tag=beta",
+        "release": "npx np",
         "postrelease": "git add package.json package-lock.json CHANGELOG.md && git commit -m \"🎉 version released 🎉\" && git push"
     },
     "peerDependencies": {
