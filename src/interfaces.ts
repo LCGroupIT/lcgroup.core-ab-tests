@@ -1,4 +1,13 @@
-import {AbTestOptions} from './module';
+export interface AbTestOptions {
+    versions: string[];
+    domain?: string;
+    versionForCrawlers?: string;
+    scope?: string;
+    expiration?: number;
+    weights?: {
+        [x: string]: number;
+    };
+}
 
 export interface GuardData {
     ab: GuardDataTest | GuardDataTest[];

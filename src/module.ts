@@ -5,17 +5,7 @@ import {AbTestsGuard} from './guard';
 import {CONFIG} from './injection-tokens';
 import {AbTestsPipe} from './pipe';
 import {AbTestsService} from './service';
-
-export interface AbTestOptions {
-    versions: string[];
-    domain?: string;
-    versionForCrawlers?: string;
-    scope?: string;
-    expiration?: number;
-    weights?: {
-        [x: string]: number;
-    };
-}
+import {AbTestOptions} from './interfaces';
 
 @NgModule({
     declarations: [AbTestVersionDirective, AbTestsPipe],

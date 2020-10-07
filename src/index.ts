@@ -6,7 +6,7 @@ export * from './classes';
 export {AbTestVersionDirective} from './directive';
 export {AbTestsGuard} from './guard';
 export {CONFIG} from './injection-tokens';
-export {GuardData, GuardDataTest} from './interfaces';
+export {GuardData, GuardDataTest, AbTestOptions} from './interfaces';
 export {AbTestsModule} from './module';
 export {AbTestsPipe} from './pipe';
 export {AbTestsService} from './service';

@@ -10,7 +10,7 @@ import {
 } from './classes';
 import {error} from './error';
 import {CONFIG} from './injection-tokens';
-import {AbTestOptions} from './module';
+import {AbTestOptions} from './interfaces';
 
 export const COOKIE_NAMESPACE = 'lcg-ab-tests';
 
