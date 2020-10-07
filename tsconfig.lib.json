@@ -11,7 +11,6 @@
         "declaration": true,
         "noEmitHelpers": true,
         "strictNullChecks": false,
-        "skipLibCheck": true,
         "outDir": "./dist",
         "paths": {},
         "lib": [
