@@ -1,0 +1,32 @@
+{
+    "extends": "./node_modules/ng-packagr/lib/ts/conf/tsconfig.ngc.json",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "declaration": true,
+        "noEmitHelpers": true,
+        "strictNullChecks": false,
+        "outDir": "./dist",
+        "paths": {},
+        "lib": [
+            "dom",
+            "es2019"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "awesomeTypescriptLoaderOptions": {
+        "forkChecker": true,
+        "useWebpackText": true
+    },
+    "compileOnSave": false,
+    "buildOnSave": false,
+    "atom": { "rewriteTsconfig": false }
+}

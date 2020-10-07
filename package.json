@@ -1,0 +1,117 @@
+{
+    "name": "@lcgroup.core/ab-tests",
+    "version": "1.0.0",
+    "ngPackage": {
+        "lib": {
+            "entryFile": "src/index.ts"
+        },
+        "whitelistedNonPeerDependencies": [
+            "angular",
+            "core-js",
+            "rxjs",
+            "zone.js",
+            "nguniversal",
+            "ngx-utils"
+        ]
+    },
+    "np": {
+        "contents": "dist",
+        "anyBranch": true
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "homepage": "https://github.com/LCGroupIT/lcgroup.core-ab-tests#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LCGroupIT/lcgroup.core-ab-tests.git"
+    },
+    "keywords": [
+        "angular",
+        "ab tests",
+        "ab test",
+        "multivariate tests",
+        "multivariate test",
+        "multivariate",
+        "ab"
+    ],
+    "author": {
+        "name": "Evgeniy Miroshkin"
+    },
+    "maintainers": [
+        {
+            "email": "e.miroshkin@lcgroup.su",
+            "name": "Evgeniy Miroshkin"
+        }
+    ],
+    "license": "MIT",
+    "description": "Ab tests module",
+    "engines": {
+        "node": ">= 10.13.0"
+    },
+    "scripts": {
+        "rimraf": "npx rimraf",
+        "ngc": "npx ngc",
+        "cpy": "npx cpy",
+        "prebuild": "npm run clean:build",
+        "build": "node build-package.js",
+        "copy:assets": "npm run cpy -- CHANGELOG.md dist",
+        "conventional-changelog": "conventional-changelog",
+        "changelog": "npm run conventional-changelog -- -p angular -i CHANGELOG.md -s",
+        "clean": "npm run clean:build && npm run clean:tests",
+        "clean:build": "npm run rimraf -- dist build",
+        "lint": "npx eslint --config ./.eslintrc.js --debug \"src/**/*.{js,ts,html}\"",
+        "lint:fix": "npx eslint --config ./.eslintrc.js --fix --debug \"src/**/*.{js,ts,html}\"",
+        "version": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r && npm run build && npm run copy:assets",
+        "release": "npx np",
+        "postrelease": "git add package.json package-lock.json CHANGELOG.md && git commit -m \"🎉 version released 🎉\" && git push"
+    },
+    "peerDependencies": {
+        "@angular/common": ">=10.0.0 <11.0.0",
+        "@angular/core": ">=10.0.0 <11.0.0",
+        "@angular/router": ">=10.0.0 <11.0.0",
+        "@angular/platform-browser": ">=10.0.0 <11.0.0",
+        "@nguniversal/express-engine": ">=10.0.0 <11.0.0",
+        "rxjs": ">=6.5.3 <7.0.0"
+    },
+    "devDependencies": {
+        "@angular/common": "^10.0.2",
+        "@angular/compiler": "^10.0.2",
+        "@angular/compiler-cli": "^10.0.2",
+        "@angular/core": "^10.0.2",
+        "@angular/router": "^10.0.2",
+        "@angular/platform-browser": "^10.0.2",
+        "@angular/platform-browser-dynamic": "^10.0.2",
+        "@lcgroup.tools/linters": "0.0.5",
+        "@nguniversal/express-engine": "^10.0.1",
+        "@ngx-utils/cookies": "^3.0.2",
+        "conventional-changelog-cli": "^2.0.34",
+        "conventional-github-releaser": "^3.1.2",
+        "coveralls": "^3.0.2",
+        "cpy-cli": "^1.0.1",
+        "es6-shim": "^0.35.3",
+        "istanbul-instrumenter-loader": "^3.0.1",
+        "ng-packagr": "^10.0.0",
+        "np": "6.2.3",
+        "npm-bump": "0.0.25",
+        "rimraf": "^3.0.2",
+        "rxjs": "^6.5.4",
+        "ts-helpers": "^1.1.2",
+        "ts-loader": "^5.1.1",
+        "tsickle": "0.39.0",
+        "typedoc": "^0.17.7",
+        "typescript": "^3.9.6",
+        "webpack": "^4.43.0",
+        "zone.js": "~0.10.3"
+    },
+    "lint-staged": {
+        "*.{js,ts,html}": [
+            "npx eslint --fix"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    }
+}
