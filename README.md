@@ -1,4 +1,5 @@
 # lcgroup.core-ab-tests
+Fork from original project: https://github.com/adrdilauro/angular-ab-tests
 
 AngularAbTests is an [angular](https://angular.io/) module that helps you setting up **easily** and **clearly** any AB or multivariate test.
 
