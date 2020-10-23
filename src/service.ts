@@ -104,7 +104,7 @@ export class AbTestsService {
         const scopeOrDefault = scope || this._defaultScope;
 
         if (!this._tests[scopeOrDefault]) {
-            error('Test with scope <' + scopeOrDefault + '> has not been defined');
+            return new AbTestForRealUser([], null);
         }
 
         return this._tests[scopeOrDefault];
