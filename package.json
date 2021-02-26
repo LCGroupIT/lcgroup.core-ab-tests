@@ -67,7 +67,7 @@
         "postrelease": "git add package.json package-lock.json CHANGELOG.md && git commit -m \"🎉 version released 🎉\" && git push"
     },
     "dependencies": {
-        "@ngx-utils/cookies": "^3.0.2"
+        "@ngx-utils/cookies": "^4.0.0"
     },
     "peerDependencies": {
         "@angular/common": ">=11.0.0 <12.0.0",
@@ -87,7 +87,7 @@
         "@angular/platform-browser-dynamic": "^11.0.0",
         "@lcgroup.tools/linters": "0.0.5",
         "@nguniversal/express-engine": "^10.0.1",
-        "@ngx-utils/cookies": "^3.0.2",
+        "@ngx-utils/cookies": "^4.0.0",
         "conventional-changelog-cli": "^2.0.34",
         "conventional-github-releaser": "^3.1.2",
         "coveralls": "^3.0.2",
