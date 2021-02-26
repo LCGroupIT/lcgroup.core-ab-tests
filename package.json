@@ -70,11 +70,11 @@
         "@ngx-utils/cookies": "^4.0.0"
     },
     "peerDependencies": {
-        "@angular/common": ">=11.0.0 <12.0.0",
-        "@angular/core": ">=11.0.0 <12.0.0",
-        "@angular/router": ">=11.0.0 <12.0.0",
-        "@angular/platform-browser": ">=11.0.0 <12.0.0",
-        "@nguniversal/express-engine": ">=11.0.0 <12.0.0",
+        "@angular/common": ">=10.0.0 <12.0.0",
+        "@angular/core": ">=10.0.0 <12.0.0",
+        "@angular/router": ">=10.0.0 <12.0.0",
+        "@angular/platform-browser": ">=10.0.0 <12.0.0",
+        "@nguniversal/express-engine": ">=10.0.0 <12.0.0",
         "rxjs": ">=6.5.3 <7.0.0"
     },
     "devDependencies": {
