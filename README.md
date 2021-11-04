@@ -1,3 +1,5 @@
+Moved to: **https://github.com/protoarch/angular**
+
 # lcgroup.core-ab-tests
 Fork from original project: https://github.com/adrdilauro/angular-ab-tests
 
